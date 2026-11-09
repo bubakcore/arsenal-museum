@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Collections | ARSENAL Military History Museum</title>
+    <meta
+        name="description"
+        content="Browse the three imagined collections of ARSENAL, a fictional military history museum: uniforms and medals, vehicles and aviation, and archives and documents."
+    >
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Brand colors: registered once, used everywhere as bg-navy, text-gold, etc. -->
+    <style type="text/tailwindcss">
+        @theme {
+            --color-navy: #101C2C;
+            --color-ivory: #F7F5F0;
+            --color-gold: #B99A5B;
+            --color-slate: #64748B;
+        }
+    </style>
+</head>
+
+<body class="bg-ivory font-sans text-navy antialiased">
+
+    <!-- SKIP LINK (visible only when focused with the keyboard) -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:bg-white focus:px-4 focus:py-2">
+        Skip to main content
+    </a>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-navy text-white">
+        <nav aria-label="Main navigation" class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+
+            <!-- ARSENAL wordmark -->
+            <a href="index.html" class="text-xl font-bold tracking-[0.3em] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">
+                ARSENAL
+            </a>
+
+            <!-- Desktop navigation links (hidden below 1024px) -->
+            <ul class="hidden items-center gap-8 lg:flex">
+                <li><a href="index.html" class="text-sm font-medium text-white/80 transition hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Home</a></li>
+                <li><a href="collections.html" aria-current="page" class="text-sm font-medium text-gold transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Collections</a></li>
+                <li><a href="our-history.html" class="text-sm font-medium text-white/80 transition hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Our History</a></li>
+                <li><a href="visit.html" class="text-sm font-medium text-white/80 transition hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Visit Us</a></li>
+                <li><a href="contact.html" class="text-sm font-medium text-white/80 transition hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Contact</a></li>
+            </ul>
+
+            <!-- Plan Your Visit button (desktop only) -->
+            <a href="visit.html" class="hidden rounded bg-gold px-5 py-3 text-sm font-semibold text-navy transition hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold lg:inline-block">
+                Plan Your Visit
+            </a>
+
+            <!-- Mobile navigation (visible below 1024px, no JavaScript) -->
+            <details class="lg:hidden">
+                <summary class="flex min-h-11 cursor-pointer list-none items-center rounded border border-white/30 px-4 text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold [&::-webkit-details-marker]:hidden">
+                    Menu
+                </summary>
+
+                <ul class="absolute inset-x-0 top-full space-y-1 border-b border-white/10 bg-navy px-4 pb-6 pt-2 sm:px-6">
+                    <li><a href="index.html" class="block py-3 text-base font-medium hover:text-gold">Home</a></li>
+                    <li><a href="collections.html" aria-current="page" class="block py-3 text-base font-medium text-gold hover:text-white">Collections</a></li>
+                    <li><a href="our-history.html" class="block py-3 text-base font-medium hover:text-gold">Our History</a></li>
+                    <li><a href="visit.html" class="block py-3 text-base font-medium hover:text-gold">Visit Us</a></li>
+                    <li><a href="contact.html" class="block py-3 text-base font-medium hover:text-gold">Contact</a></li>
+                    <li class="pt-3">
+                        <a href="visit.html" class="block rounded bg-gold px-5 py-3 text-center text-sm font-semibold text-navy hover:bg-white">Plan Your Visit</a>
+                    </li>
+                </ul>
+            </details>
+
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- PAGE INTRO -->
+        <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+            <div class="max-w-3xl">
+                <p class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em]">
+                    <span class="h-px w-10 bg-gold" aria-hidden="true"></span>
+                    Collections
+                </p>
+                <h1 class="mt-6 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+                    Our Collections
+                </h1>
+                <p class="mt-6 text-lg leading-relaxed text-navy/80">
+                    ARSENAL would care for three collections. Each one keeps a different part of military history, from the people who served to the machines and papers they left behind.
+                </p>
+                <p class="mt-4 text-sm text-navy/70">
+                    Placeholder content: these collections are imagined for a fictional museum.
+                </p>
+            </div>
+        </section>
+
+        <!-- COLLECTION ROWS -->
+        <section class="bg-white py-16 sm:py-20 lg:py-28">
+            <div class="mx-auto max-w-7xl space-y-16 px-4 sm:px-6 lg:space-y-28 lg:px-8">
+
+                <!-- Uniforms & Medals -->
+                <article class="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
+                    <img
+                        src="uniforms.jpg"
+                        alt="A military uniform on display: describe your photo here"
+                        class="aspect-[4/3] w-full rounded bg-slate/20 object-cover shadow-lg"
+                    >
+                    <div>
+                        <h2 class="text-2xl font-bold sm:text-3xl lg:text-4xl">Uniforms &amp; Medals</h2>
+                        <p class="mt-4 max-w-xl text-lg leading-relaxed text-navy/80">
+                            Uniforms, insignia, and decorations that tell the personal stories of those who served.
+                        </p>
+                        <a href="uniforms-medals.html" class="mt-6 inline-flex min-h-12 items-center justify-center rounded bg-navy px-8 text-sm font-semibold text-white transition hover:bg-gold hover:text-navy focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">
+                            <span>Discover Collection<span class="sr-only">: Uniforms &amp; Medals</span></span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Vehicles & Aviation (image on the right on desktop) -->
+                <article class="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
+                    <img
+                        src="vehicles.jpg"
+                        alt="A vintage military vehicle or aircraft: describe your photo here"
+                        class="aspect-[4/3] w-full rounded bg-slate/20 object-cover shadow-lg lg:order-last"
+                    >
+                    <div>
+                        <h2 class="text-2xl font-bold sm:text-3xl lg:text-4xl">Vehicles &amp; Aviation</h2>
+                        <p class="mt-4 max-w-xl text-lg leading-relaxed text-navy/80">
+                            Restored vehicles and aircraft that show how military technology changed over time.
+                        </p>
+                        <a href="vehicles-aviation.html" class="mt-6 inline-flex min-h-12 items-center justify-center rounded bg-navy px-8 text-sm font-semibold text-white transition hover:bg-gold hover:text-navy focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">
+                            <span>Discover Collection<span class="sr-only">: Vehicles &amp; Aviation</span></span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Archives & Documents -->
+                <article class="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
+                    <img
+                        src="archives.jpg"
+                        alt="Historical military documents, maps, or photographs: describe your photo here"
+                        class="aspect-[4/3] w-full rounded bg-slate/20 object-cover shadow-lg"
+                    >
+                    <div>
+                        <h2 class="text-2xl font-bold sm:text-3xl lg:text-4xl">Archives &amp; Documents</h2>
+                        <p class="mt-4 max-w-xl text-lg leading-relaxed text-navy/80">
+                            Letters, maps, orders, and photographs that record events in the words of the people who lived them.
+                        </p>
+                        <a href="archives-documents.html" class="mt-6 inline-flex min-h-12 items-center justify-center rounded bg-navy px-8 text-sm font-semibold text-white transition hover:bg-gold hover:text-navy focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">
+                            <span>Discover Collection<span class="sr-only">: Archives &amp; Documents</span></span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- VISIT BANNER -->
+        <section class="bg-gold py-16 sm:py-20">
+            <div class="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold leading-tight sm:text-4xl">Plan Your Visit</h2>
+                <p class="mt-4 text-lg leading-relaxed">
+                    Find opening hours, admission prices, and visitor guidelines in one place.
+                    All details are placeholders for this fictional museum.
+                </p>
+                <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                    <a href="visit.html" class="inline-flex min-h-12 items-center justify-center rounded bg-navy px-8 text-sm font-semibold text-white transition hover:bg-white hover:text-navy focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy">
+                        Plan Your Visit
+                    </a>
+                    <a href="contact.html" class="inline-flex min-h-12 items-center justify-center rounded border border-navy px-8 text-sm font-semibold text-navy transition hover:bg-navy hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy text-white">
+        <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+
+            <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Wordmark and short description -->
+                <div>
+                    <a href="index.html" class="text-xl font-bold tracking-[0.3em] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">
+                        ARSENAL
+                    </a>
+                    <p class="mt-4 max-w-sm leading-relaxed text-white/70">
+                        A fictional military history museum concept, dedicated to preserving
+                        artifacts and sharing the stories behind them.
+                    </p>
+                </div>
+
+                <!-- Quick links -->
+                <nav aria-label="Footer navigation">
+                    <h2 class="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Explore</h2>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="index.html" class="text-white/70 transition hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Home</a></li>
+                        <li><a href="collections.html" class="text-white/70 transition hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Collections</a></li>
+                        <li><a href="our-history.html" class="text-white/70 transition hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Our History</a></li>
+                        <li><a href="visit.html" class="text-white/70 transition hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Visit Us</a></li>
+                        <li><a href="contact.html" class="text-white/70 transition hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Collection links -->
+                <nav aria-label="Collections navigation">
+                    <h2 class="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Collections</h2>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="uniforms-medals.html" class="text-white/70 transition hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Uniforms &amp; Medals</a></li>
+                        <li><a href="vehicles-aviation.html" class="text-white/70 transition hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Vehicles &amp; Aviation</a></li>
+                        <li><a href="archives-documents.html" class="text-white/70 transition hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Archives &amp; Documents</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="mt-12 border-t border-white/10 pt-6 text-sm text-white/60">
+                <p>&copy; 2026 ARSENAL. A fictional museum created for frontend practice. Not a real institution.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+# ARSENAL — Military History Museum
+
+A modern, responsive website concept for a fictional military history museum, built with HTML and Tailwind CSS.
+
+## About the Project
+
+ARSENAL is a museum website concept designed to showcase historical military artifacts, uniforms, medals, vehicles, archival photographs, and the stories behind military history.
+
+The project focuses on creating a professional, accessible, and responsive user interface while practising Tailwind CSS utility classes and modern web layout techniques.
+
+## Project Goals
+
+- Practise building real-world websites with Tailwind CSS.
+- Improve responsive web design skills.
+- Understand Flexbox, CSS Grid, spacing, typography, and breakpoints.
+- Create reusable and consistent UI sections.
+- Build a portfolio project that demonstrates practical frontend development skills.
+
+## Technologies Used
+
+- **HTML5** — Website structure and semantic markup.
+- **Tailwind CSS v4** — Styling, responsive layouts, and UI design.
+- **Tailwind Play CDN** — Development and learning setup.
+
+> **Note:** The Tailwind CSS Play CDN is intended for development and learning. A production deployment should use a proper Tailwind CSS build setup.
+
+## Pages
+
+| Page | File | What it contains |
+|---|---|---|
+| Home | `index.html` | Hero, collection previews, history teaser, visit banner |
+| Collections | `collections.html` | Overview of all three collections |
+| Uniforms & Medals | `uniforms-medals.html` | Collection page |
+| Vehicles & Aviation | `vehicles-aviation.html` | Collection page |
+| Archives & Documents | `archives-documents.html` | Collection page |
+| Our History | `our-history.html` | Museum introduction, mission, and a three-milestone timeline |
+| Visit Us | `visit.html` | Placeholder address, opening hours, admission prices, and visitor guidelines |
+| Contact | `contact.html` | Placeholder contact details and a demonstration form |
+
+Every page shares the same navigation bar and footer.
+
+## Design Direction
+
+The website follows a modern, professional museum aesthetic.
+
+- **Colors:** Deep navy `#101C2C`, warm ivory `#F7F5F0`, muted gold `#B99A5B`, slate gray `#64748B`, and white.
+- **Typography:** Bold headings and clean, readable sans-serif body text.
+- **Layout:** Spacious sections, responsive grids, and structured content.
+- **Visual style:** Historical photography, subtle borders, and consistent spacing.
+
+## Features
+
+- Responsive layout for mobile, tablet, and desktop.
+- Semantic HTML structure.
+- Tailwind CSS utility-based styling.
+- Mobile menu built with the HTML `<details>` element, so it needs no JavaScript.
+- Accessible form labels, visible focus styles, a skip link, and descriptive link text.
+- No JavaScript at all.
+
+## Project Structure
+
+```
+arsenal-museum/
+├── index.html
+├── collections.html
+├── uniforms-medals.html
+├── vehicles-aviation.html
+├── archives-documents.html
+├── our-history.html
+├── visit.html
+├── contact.html
+├── template.html
+├── hero.jpg
+├── uniforms.jpg
+├── vehicles.jpg
+├── archives.jpg
+├── history.jpg
+└── README.md
+```
+
+`template.html` is a blank page with the shared head, navigation, and footer. It is copied to start each new page.
+
+## Getting Started
+
+1. Clone or download this repository.
+2. Open the project folder in your code editor.
+3. Open `index.html` in your browser, or use the Live Server extension in VS Code.
+4. Make sure you have an internet connection so the Tailwind Play CDN can load.
+5. Edit the pages and images as you like.
+
+## Images
+
+Photos are kept in the same folder as the pages. File names are lowercase with no spaces, because GitHub Pages treats `Hero.jpg` and `hero.jpg` as different files. Only use photos with a free or public-domain license, and add the credit in the caption.
+
+## Project Status
+
+**Status:** Complete (frontend practice project)
+
+Features such as working form submission, interactive filtering, and backend integrations are outside the scope of this project. The contact form is for demonstration only and does not send messages.
+
+## Disclaimer
+
+ARSENAL is a fictional educational museum concept created for frontend development practice. It is not a real institution. All addresses, opening hours, prices, and contact details are placeholders. Historical artifacts and imagery, if included, are intended for educational presentation.
+
+## Author
+
+**Bubak**
+Frontend Development | HTML | Tailwind CSS
+
+Built to practise, learn, and improve one project at a time.
